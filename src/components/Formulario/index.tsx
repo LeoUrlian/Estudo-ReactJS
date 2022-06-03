@@ -31,7 +31,7 @@ class Formulario extends React.Component<{
           id: uuidv4()
         }
       ]
-    );
+    )
     this.setState({
       tarefa: "",
       tempo: "00:00"
@@ -42,7 +42,9 @@ class Formulario extends React.Component<{
     return(
       <form className={style.novaTarefa} onSubmit={this.adicionarTarefa.bind(this)}>
         <div className={style.inputContainer}>
-          <label htmlFor="tarefa">Adicione um novo estudo</label>
+          <label htmlFor="tarefa">
+            Adicione um novo estudo
+          </label>
           <input 
             type="text"
             name="tarefa"
@@ -54,7 +56,9 @@ class Formulario extends React.Component<{
           />
         </div>
         <div className={style.inputContainer}>
-        <label htmlFor="tempo">Tempo</label>
+          <label htmlFor="tempo">
+            Tempo
+          </label>
           <input 
             type="time" 
             step="1"
